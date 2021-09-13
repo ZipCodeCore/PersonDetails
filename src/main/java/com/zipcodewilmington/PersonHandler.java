@@ -54,7 +54,7 @@ public class PersonHandler {
          Person currentPerson = personArray[i];             //     this one also works !!!
          String newString = currentPerson.toString();           // enves de las dos 54+55
                                                         // String currentPerson = personArray[i].toString();
-         result += newString;
+         result += newString; //
 
      }
         return result;
@@ -63,18 +63,21 @@ public class PersonHandler {
 
 
     public String forEachLoop() {
-        String result = "";
+
  //       // identify array's type
  //       // identify array's variable-name
 
  //        // use the above discoveries to declare for-each-loop signature
  //       // begin loop
-        for (Person currentPerson : personArray){
-
- //       // get `string Representation` of `currentPerson`
-           String peps = currentPerson.toString();
-
+          // String peps = currentPerson.toString();
+                // get `string Representation` of `currentPerson`
 //            // append `stringRepresentation` to `result` variable
+
+
+        String result = "";
+
+            for (Person currentPerson : personArray){
+
             result += currentPerson;
 
         }
