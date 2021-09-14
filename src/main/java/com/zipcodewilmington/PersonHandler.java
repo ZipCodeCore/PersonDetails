@@ -64,14 +64,14 @@ public class PersonHandler {
 
     public String forEachLoop() {
 
- //       // identify array's type
- //       // identify array's variable-name
+        /*identify array's type
+         identify array's variable-name
 
- //        // use the above discoveries to declare for-each-loop signature
- //       // begin loop
-          // String peps = currentPerson.toString();
-                // get `string Representation` of `currentPerson`
-//            // append `stringRepresentation` to `result` variable
+          use the above discoveries to declare for-each-loop signature
+         begin loop
+           String peps = currentPerson.toString();
+                 get `string Representation` of `currentPerson`
+            append `stringRepresentation` to `result` variable*/
 
 
         String result = "";
@@ -82,9 +82,8 @@ public class PersonHandler {
 
         }
         return result;
-    }// end loop
-    //
-    //
+    }
+
 
 
 
