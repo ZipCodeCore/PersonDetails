@@ -13,14 +13,16 @@ public class PersonHandler {
     public String whileLoop() {
         String result = "";
         // create a `counter`
+        int counter = 0;
         // while `counter` is less than length of array
+        while (counter < this.personArray.length) {
             // begin loop
-
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-
+            // use `counter` to identify the `current Person` in the array
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
+            result = result + this.personArray[counter++].toString();
             // end loop
+        }
         return result;
     }
 
