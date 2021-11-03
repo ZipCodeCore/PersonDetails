@@ -7,6 +7,7 @@ public class PersonHandler {
     private final Person[] personArray;
 
     public PersonHandler(Person[] personArray) {
+
         this.personArray = personArray;
     }
 
@@ -15,6 +16,14 @@ public class PersonHandler {
         // create a `counter`
         // while `counter` is less than length of array
             // begin loop
+        int count = 0;
+        while(count < personArray.length)
+        {
+            result = result.concat(personArray[count].toString());
+            count ++;
+
+        }
+
 
                 // use `counter` to identify the `current Person` in the array
                 // get `string Representation` of `currentPerson`
@@ -31,7 +40,9 @@ public class PersonHandler {
         // identify initial value
         // identify terminal condition
         // identify increment
-
+    for(int i = 0; i < personArray.length; i++){
+        result = result .concat(personArray[i].toString());
+    }
         // use the above clauses to declare for-loop signature
             // begin loop
                 // use `counter` to identify the `current Person` in the array
@@ -48,7 +59,9 @@ public class PersonHandler {
         String result = "";
         // identify array's type
         // identify array's variable-name
-
+    for(Person person : personArray){
+        result = result .concat(person.toString()) ;
+    }
         // use the above discoveries to declare for-each-loop signature
             // begin loop
                 // get `string Representation` of `currentPerson`
