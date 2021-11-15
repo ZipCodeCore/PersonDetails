@@ -48,42 +48,70 @@ public class PersonHandler {
 
 
     public String forLoop() {
+
+        // just another attempt
         String result = "";
-        int counter;
-        // identify initial value
-        // identify terminal condition
-        // identify increment
-        for (counter = 0; counter < personArray.length; counter++) {
-            Person currentPerson = personArray[counter];
-            String strCurrentPerson = currentPerson.toString();
-            result += strCurrentPerson;
+
+        for (int i = 0; i < personArray.length; i++) {
+            result = result + personArray[i];
 
         }
-        // use the above clauses to declare for-loop signature
-        // begin loop
-        // use `counter` to identify the `current Person` in the array
-        // get `string Representation` of `currentPerson`
-        // append `stringRepresentation` to `result` variable
-        // end loop
 
         return result;
+
+
+//
+//        String result = "";
+//        int counter;
+//        // identify initial value
+//        // identify terminal condition
+//        // identify increment
+//        for (counter = 0; counter < personArray.length; counter++) {
+//            Person currentPerson = personArray[counter];
+//            String strCurrentPerson = currentPerson.toString();
+//            result += strCurrentPerson;
+//
+//        }
+//        // use the above clauses to declare for-loop signature
+//        // begin loop
+//        // use `counter` to identify the `current Person` in the array
+//        // get `string Representation` of `currentPerson`
+//        // append `stringRepresentation` to `result` variable
+//        // end loop
+//
+//        return result;
     }
 
 
     public String forEachLoop() {
+
+        // just another attempt
         String result = "";
+        int i = 0;
 
-        // identify array's type -- Person
-        // identify array's variable-name -- personArray
-        // use the above discoveries to declare for-each-loop signature
-
-        // SO, FOR EACH LOOPS WILL PERFORM THE CODE ON EVERY THING IN THE SET--ITLL GO THROUGH EVERY SINGLE ONE
-        for (Person person : personArray) {    // for each currentPerson in personArray do something
-
-            String strCurrentPerson = person.toString();
-
-            result += strCurrentPerson;
+        for (Person person : personArray) {
+            result = result + personArray[i];
+            i++;
         }
+
+        return result;
+
+
+
+
+//        String result = "";
+//
+//        // identify array's type -- Person
+//        // identify array's variable-name -- personArray
+//        // use the above discoveries to declare for-each-loop signature
+//
+//        // SO, FOR EACH LOOPS WILL PERFORM THE CODE ON EVERY THING IN THE SET--ITLL GO THROUGH EVERY SINGLE ONE
+//        for (Person person : personArray) {    // for each currentPerson in personArray do something
+//
+//            String strCurrentPerson = person.toString();
+//
+//            result += strCurrentPerson;
+//        }
 
 
         // begin loop
@@ -91,7 +119,7 @@ public class PersonHandler {
         // append `stringRepresentation` to `result` variable
         // end loop
 
-        return result;
+//        return result;
     }
 
 
