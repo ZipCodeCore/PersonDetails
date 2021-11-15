@@ -20,7 +20,7 @@ public class Person {
         return lastName;
     }
 
-    @Override
+    @Override                                               // toString() gives us the memory address innately, we overrided it to give us the 2 strings instead
     public String toString() {
         return new StringBuilder()
                 .append("\nMy first name is " + firstName)
