@@ -12,6 +12,7 @@ public class Person {
         this.lastName = lastName;
     }
 
+    // why is this called a GETTER??
     public String getFirstName() {
         return firstName;
     }
@@ -20,7 +21,7 @@ public class Person {
         return lastName;
     }
 
-    @Override
+    @Override // why is Override here??
     public String toString() {
         return new StringBuilder()
                 .append("\nMy first name is " + firstName)
