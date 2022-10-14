@@ -10,6 +10,9 @@ public class PersonHandler {
         this.personArray = personArray;
     }
 
+    // NOTICE how the comments can be used to step-by-step break down the problem into 
+    // simple lines of code...
+    
     public String whileLoop() {
         String result = "";
         // create a `counter`
