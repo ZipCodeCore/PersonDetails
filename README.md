@@ -10,3 +10,4 @@
         * The methods contain line-by-line comments to guide you through the process.
     * Ensure all tests cases pass successfully.
 
+Do _ObjectsOne_ and _TestingPersonClass_ labs first. (well, unless you __want__ to make things harder. Why?)
