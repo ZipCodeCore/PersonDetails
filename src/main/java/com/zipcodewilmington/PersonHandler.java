@@ -1,5 +1,7 @@
 package com.zipcodewilmington;
 
+import java.util.Arrays;
+
 /**
  * Created by leon on 1/24/18.
  */
@@ -14,17 +16,21 @@ public class PersonHandler {
     // simple lines of code...
     
     public String whileLoop() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         // create a `counter`
+        int counter = 0;
         // while `counter` is less than length of array
+        while(counter< personArray.length){
             // begin loop
 
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
+            // use `counter` to identify the `current Person` in the array
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
+            result.append(personArray[counter].toString());
+            counter++;
 
-            // end loop
-        return result;
+        }// end loop
+        return result.toString();
     }
 
 
@@ -41,6 +47,10 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+        for(int i=0;i< personArray.length;i++)
+            {
+            result+=personArray[i].toString();
+            }
 
         return result;
     }
@@ -48,7 +58,7 @@ public class PersonHandler {
 
 
     public String forEachLoop() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         // identify array's type
         // identify array's variable-name
 
@@ -57,8 +67,11 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+        for(Person strArray: personArray){
+            result.append(strArray);
+        }
 
-        return result;
+        return result.toString();
     }
 
 
